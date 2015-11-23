@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CSS filter Blurr Images Example</title>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            background: url(images/4lines.jpg) left top no-repeat;
+            background-attachment: fixed;
+            height: 768px;
+            font-family: 'Poiret One', cursive;
+            color: #fff;
+        }
+
+        .filter-section
+        {
+            background-image: url(images/4lines.jpg);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .header
+        {
+            width: 100%;
+            height: 120px;
+            position: relative;
+            border-bottom: 4px solid #00ff21;
+        }
+
+        .banner
+        {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        .main-container
+        {
+            width: 100%;
+            height: 750px;
+            position: relative;
+            border-top: 4px solid #00ff21;
+        }
+
+        .container
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .filter-grayscale
+        {
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            -ms-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .filter-blur
+        {
+            -webkit-filter: blur(4px);
+            -moz-filter: blur(4px);
+            -ms-filter: blur(4px);
+            filter: blur(4px);
+        }
+
+        .filter-hue-rotate
+        {
+            -webkit-filter: hue-rotate(90deg);
+            -moz-filter: hue-rotate(90deg);
+            -ms-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+        }
+
+        .filter-invert
+        {
+            -webkit-filter: invert(1);
+            -moz-filter: invert(1);
+            -ms-filter: invert(1);
+            filter: invert(1);
+        }
+
+        .filter-brightness
+        {
+            -webkit-filter: brightness(50%);
+            -moz-filter: brightness(50%);
+            -ms-filter: brightness(50%);
+            filter: brightness(50%);
+        }
+
+        .filter-saturate
+        {
+            -webkit-filter: saturate(50%);
+            -moz-filter: saturate(50%);
+            -ms-filter: saturate(50%);
+            filter: saturate(50%);
+        }
+
+        .filter-sepia
+        {
+            -webkit-filter: sepia(1);
+            -moz-filter: sepia(1);
+            -ms-filter: sepia(1);
+            filter: sepia(1);
+        }
+
+        .none
+        {
+            background: rgba(255,0,0,0.5);
+        }
+
+
+        .layout
+        {
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container filter-section none"></div>
+        <div class="container">
+            <div class="layout">
+                <h1>COME RICHIEDERE INFORMAZIONI</h1>
+                <p>Potete utilizzare il modulo a fianco per richiedere informazioni ed essere ricontattati in merito a preventivi, supporto ed altro, oppure potete telefonare o inviarci una email.</p>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="layout">
+            <div style="padding: 25px 0; color: red; font-weight: bold">
+                Apply CSS Filter :  
+
+                    <select id="filter">
+                        <option value="none">none </option>
+                        <option value="filter-grayscale">Grayscale </option>
+                        <option value="filter-sepia">Sepia </option>
+                        <option value="filter-blur">Blur </option>
+                        <option value="filter-invert">Invert </option>
+                        <option value="filter-brightness">Brightness </option>
+                        <option value="filter-saturate">Saturate </option>
+                        <option value="filter-hue-rotate">Hue-Rotate </option>
+                    </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container filter-section none"></div>
+        <div class="container">
+            <div class="layout">
+                <h1>PROFILO AZIENDALE</h1>
+                <p>Potete utilizzare il modulo a fianco per richiedere informazioni ed essere ricontattati in merito a preventivi, supporto ed altro, oppure potete telefonare o inviarci una email.</p>
+                <p>L’Accento Arredamenti è stata costituita nel 1990 da Alessandro Baldinotti e Costanzo Cacelli, con l’idea di creare un’azienda in grado di rispondere alla richiesta di arredamento da interno ed esterno su misura.</p>
+                <p>La collaborazione dei due soci, entrambi presenti nel settore della falegnameria da oltre 30 anni, ha contribuito alla crescita dell’azienda, assumendo abili artigiani, creando uno studio tecnico interno e acquistando attrezzature e macchinari modernissimi. Oltre a queste scelte, hanno allacciato rapporti sul territorio con altre aziende e studi di progettazione per la creazione di una rete di professionalità e qualità idonea per rispondere ad ogni tipo di esigenza da parte del committente.</p>
+                <p>Potete utilizzare il modulo a fianco per richiedere informazioni ed essere ricontattati in merito a preventivi, supporto ed altro, oppure potete telefonare o inviarci una email.</p>
+                <p>L’Accento Arredamenti è stata costituita nel 1990 da Alessandro Baldinotti e Costanzo Cacelli, con l’idea di creare un’azienda in grado di rispondere alla richiesta di arredamento da interno ed esterno su misura.</p>
+                <p>La collaborazione dei due soci, entrambi presenti nel settore della falegnameria da oltre 30 anni, ha contribuito alla crescita dell’azienda, assumendo abili artigiani, creando uno studio tecnico interno e acquistando attrezzature e macchinari modernissimi. Oltre a queste scelte, hanno allacciato rapporti sul territorio con altre aziende e studi di progettazione per la creazione di una rete di professionalità e qualità idonea per rispondere ad ogni tipo di esigenza da parte del committente.</p>
+                <p>Potete utilizzare il modulo a fianco per richiedere informazioni ed essere ricontattati in merito a preventivi, supporto ed altro, oppure potete telefonare o inviarci una email.</p>
+                <p>L’Accento Arredamenti è stata costituita nel 1990 da Alessandro Baldinotti e Costanzo Cacelli, con l’idea di creare un’azienda in grado di rispondere alla richiesta di arredamento da interno ed esterno su misura.</p>
+                <p>La collaborazione dei due soci, entrambi presenti nel settore della falegnameria da oltre 30 anni, ha contribuito alla crescita dell’azienda, assumendo abili artigiani, creando uno studio tecnico interno e acquistando attrezzature e macchinari modernissimi. Oltre a queste scelte, hanno allacciato rapporti sul territorio con altre aziende e studi di progettazione per la creazione di una rete di professionalità e qualità idonea per rispondere ad ogni tipo di esigenza da parte del committente.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //var _top = $('.block').offset().top;
+            //$('.block').css({
+            //})
+
+            $('#filter').change(function () {
+                var seleted = $(this).val();
+                $('.filter-section').removeClass().addClass('container  filter-section ' + seleted);
+            });
+        });
+    </script>
+</body>
+</html>
